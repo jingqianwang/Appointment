@@ -1,0 +1,178 @@
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.percent.PercentFrameLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            //上方图片
+            <ImageView
+                android:id="@+id/pic_motto"
+                android:layout_gravity="top"
+                android:layout_width="match_parent"
+                android:scaleType="centerCrop"
+                app:layout_heightPercent="34%" />
+
+            <TextView
+                android:id="@+id/motto"
+                android:layout_gravity="top"
+                android:layout_width="match_parent"
+                app:layout_marginTopPercent="34%"
+                app:layout_heightPercent="6%"
+                android:gravity="center|bottom"
+                android:textSize="12sp"
+                android:textColor="#808A87" />
+
+            //按键1
+            <Button
+                android:id="@+id/with_me_thing1"
+                android:layout_gravity="bottom|left"
+                android:layout_margin="10dp"
+                android:background="@drawable/button_shape"
+                app:layout_heightPercent="55%"
+                app:layout_widthPercent="30%" />
+
+            <TextView
+                android:id="@+id/with_me_thing1_text"
+                android:layout_gravity="bottom|left"
+                android:layout_margin="10dp"
+                app:layout_heightPercent="55%"
+                app:layout_widthPercent="30%"
+                android:gravity="center"
+                android:textSize="18sp" />
+
+            <TextView
+                android:text="事件一"
+                android:textSize="12sp"
+                android:textColor="#DCDCDC"
+                app:layout_heightPercent="54%"
+                app:layout_widthPercent="30%"
+                android:layout_gravity="bottom|left"
+                android:layout_margin="10dp"
+                android:gravity="center|top" />
+
+            <TextView
+                android:text="————————————————————————————————————————————————————————————————————————"
+                android:maxLines="1"
+                android:textSize="5sp"
+                android:textColor="#C0C0C0"
+                app:layout_heightPercent="53%"
+                app:layout_widthPercent="30%"
+                android:layout_gravity="bottom|left"
+                android:layout_margin="10dp"
+                android:gravity="center|top"
+                android:padding="10dp"/>
+
+            //按键2
+            <Button
+                android:id="@+id/with_me_thing2"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_margin="10dp"
+                android:background="@drawable/button_shape"
+                app:layout_heightPercent="55%"
+                app:layout_widthPercent="30%" />
+
+            <TextView
+                android:id="@+id/with_me_thing2_text"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_margin="10dp"
+                app:layout_heightPercent="55%"
+                app:layout_widthPercent="30%"
+                android:gravity="center"
+                android:textSize="18sp" />
+
+            <TextView
+                android:text="事件二"
+                android:textSize="12sp"
+                android:textColor="#DCDCDC"
+                app:layout_heightPercent="54%"
+                app:layout_widthPercent="30%"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_margin="10dp"
+                android:gravity="center|top" />
+
+            <TextView
+                android:text="————————————————————————————————————————————————————————————————————————"
+                android:maxLines="1"
+                android:textSize="5sp"
+                android:textColor="#C0C0C0"
+                app:layout_heightPercent="53%"
+                app:layout_widthPercent="30%"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_margin="10dp"
+                android:gravity="center|top"
+                android:padding="10dp"/>
+
+            //按键3
+            <Button
+                android:id="@+id/with_me_thing3"
+                android:layout_gravity="bottom|right"
+                android:layout_margin="10dp"
+                android:background="@drawable/button_shape"
+                app:layout_heightPercent="55%"
+                app:layout_widthPercent="30%"/>
+
+            <TextView
+                android:id="@+id/with_me_thing3_text"
+                android:layout_gravity="bottom|right"
+                android:layout_margin="10dp"
+                app:layout_heightPercent="55%"
+                app:layout_widthPercent="30%"
+                android:gravity="center"
+                android:textSize="18sp" />
+
+            <TextView
+                android:text="事件三"
+                android:textSize="12sp"
+                android:textColor="#DCDCDC"
+                app:layout_heightPercent="54%"
+                app:layout_widthPercent="30%"
+                android:layout_gravity="bottom|right"
+                android:layout_margin="10dp"
+                android:gravity="center|top" />
+
+            <TextView
+                android:text="————————————————————————————————————————————————————————————————————————"
+                android:maxLines="1"
+                android:textSize="5sp"
+                android:textColor="#C0C0C0"
+                app:layout_heightPercent="53%"
+                app:layout_widthPercent="30%"
+                android:layout_gravity="bottom|right"
+                android:layout_margin="10dp"
+                android:gravity="center|top"
+                android:padding="10dp"/>
+
+        </android.support.percent.PercentFrameLayout>
+
+        <Button
+            android:id="@+id/nav_button"
+            android:layout_margin="5dp"
+            android:layout_width="25sp"
+            android:layout_height="25sp"
+            android:background="@drawable/ic_nav_button"/>
+
+
+    </RelativeLayout>
+
+    //侧边栏布局
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:layout_gravity="start"
+        app:menu="@menu/nav_menu"
+        app:headerLayout="@layout/nav_header" />
+
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single"> //主要功能
+
+        <item
+            android:id="@+id/nav_with_me"
+            android:title="与己 WITH ME" />
+        <item
+            android:id="@+id/nav_with_others"
+            android:title="与人 WITH OTHERS" />
+        <item
+            android:id="@+id/nav_mutual_encouragement"
+            android:title="共勉 MUTUAL ENCOURAGEMENT"/>
+    </group>
+
+
+    <group android:checkableBehavior="single">  //个人设置
+        <item
+            android:id="@+id/nav_log_in"
+            android:title="登陆 LOG IN" />
+        <item
+            android:id="@+id/nav_settings"
+            android:title="设置 SETTINGS" />
+    </group>
+
+</menu>

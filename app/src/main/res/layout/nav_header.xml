@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:padding="10dp" >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ic_head_image"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/ic_user"
+        android:layout_centerInParent="true" />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:text="User name"
+        android:textColor="#C0C0C0"
+        android:layout_above="@+id/signature"/>
+
+    <TextView
+        android:id="@+id/signature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="#C0C0C0"
+        android:text="Personalized signature"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
